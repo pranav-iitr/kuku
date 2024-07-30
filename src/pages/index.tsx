@@ -1,7 +1,7 @@
 
 import BookCard from "@/components/BookCard";
 import { listProductAction } from "@/hooks/product";
-import { useState, useEffect } from "react";
+import { useState, useEffect, Key } from "react";
 import Select from "react-select";
 
 const ratingOptions = [
@@ -37,10 +37,9 @@ export default function Home() {
     });
   }, []);
   useEffect(() => {
-    const filter = new Object();
+    const filter: { genre?: string; author?: string; rating?: string } = {};
     if(selectedGenre ){
-      filter['genre'] = selectedGenre.value;
-
+      filter.genre = selectedGenre.value;
     }
     if(selectedAuthor){
       filter['author'] = selectedAuthor.value;
@@ -87,7 +86,7 @@ export default function Home() {
           <div className="flex flex-col w-full gap-5 items-end">
             <div className="flex flex-wrap w-full justify-evenly gap-12">
               {products.length > 0 &&
-                products.map((book, index) => (
+                products.map((book: { id: any; cover_image: string; title: string; author: { name: string; }; }, index: any) => (
                   <BookCard
                     key={book.id}
                     imageSrc={book.cover_image}

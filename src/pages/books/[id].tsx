@@ -187,7 +187,7 @@ const BookPreview: React.FC = () => {
           )}
         </div>
         <div className="flex flex-col gap-6 mb-4">
-          {displayedReviews.map((review, index) => (
+          {displayedReviews.map((review: { id: number; reviewerName: string; review_text: string; rating: number; }, index: React.Key | null | undefined) => (
             <ReviewItem
               key={index}
               profilePic={getPrifulePicFromId(review?.id)}

@@ -11,8 +11,8 @@ interface StarRatingProps {
 const StarRating: React.FC<StarRatingProps> = ({
   totalStars = 5,
   allowUpdate = true,
-  rating,
-  setRating,
+  rating = 0,
+  setRating  = () => {},
   
 }) => {
   // const [rating, setRating] = useState<number>(0);
