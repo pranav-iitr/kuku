@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
             </div>
             <Image src="/assets/bookstore-2.svg" alt="Bookstore" width={150.51} height={17.93} />
           </div>
-          <div className="text-[#4d4d4d] text-base">
+          <div className="text-[#4d4d4d] text-base max-w-[400px] text-wrap ">
             The largest, most complete and trusted online bookstore in the world. With us, you can shop online & help save your high street at the same time.
           </div>
           <div className="flex space-x-4">
