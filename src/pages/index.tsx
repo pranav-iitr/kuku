@@ -54,9 +54,7 @@ export default function Home() {
       <div className="flex ">
         <div className="flex flex-col flex-1">
           <div className="flex justify-between items-center py-5 px-10 bg-white">
-            {/* Items Count */}
-
-            {/* Sort Dropdown */}
+          
             <div className="flex flex-col tablet:flex-row items-center justify-between w-full ">
               <div className="flex flex-col tablet:flex-row items-center space-x-4">
                 <span className="text-gray-600 text-lg">Sort by</span>
@@ -95,7 +93,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-col w-full gap-5 items-end">
-            <div className="flex flex-wrap w-full justify-evenly gap-12">
+            <div className="flex flex-wrap w-full justify-evenly pb-12 gap-12">
               {products.length > 0 &&
                 products.map(
                   (

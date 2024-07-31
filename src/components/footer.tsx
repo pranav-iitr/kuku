@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
           <Image src="/assets/instagram-1.svg" alt="Instagram" width={24} height={24} />
         </div>
         <div className="text-[#999999] text-base">
-          Copyright © 2022 Bookstore. All rights reserved.
+          Copyright © 2024 Kuku FM. All rights reserved.
         </div>
       </div>
     </footer>
